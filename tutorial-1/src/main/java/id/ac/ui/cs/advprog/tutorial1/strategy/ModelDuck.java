@@ -1,5 +1,12 @@
 package id.ac.ui.cs.advprog.tutorial1.strategy;
 
-public class ModelDuck {
-    // TODO Complete me!
+public class ModelDuck extends Duck {
+    public ModelDuck() {
+        flyBehavior = new FlyNoWay();
+        quackBehavior = new Quack();
+    }
+
+    public void display() {
+        System.out.println("I'm a model duck");
+    }
 }
