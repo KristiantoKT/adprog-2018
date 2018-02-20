@@ -22,29 +22,26 @@ public class WeatherData extends Observable {
     }
 
     public float getTemperature() {
-        // TODO Complete me!
-        return 0f;
+        return temperature;
     }
 
     public void setTemperature(float temperature) {
-        // TODO Complete me!
+        this.temperature = temperature;
     }
 
     public float getHumidity() {
-        // TODO Complete me!
-        return 0f;
+        return humidity;
     }
 
     public void setHumidity(float humidity) {
-        // TODO Complete me!
+        this.humidity = humidity;
     }
 
     public float getPressure() {
-        // TODO Complete me!
-        return 0f;
+        return pressure;
     }
 
     public void setPressure(float pressure) {
-        // TODO Complete me!
+        this.pressure = pressure;
     }
 }
