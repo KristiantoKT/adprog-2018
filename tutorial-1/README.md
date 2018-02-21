@@ -122,29 +122,29 @@ gradle checkstyleMain
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make at least 1 commit that contains your progress in completing
+- [x] Make at least 1 commit that contains your progress in completing
 `strategy` pattern
-- [ ] Make at least 1 commit that contains your progress in completing
+- [x] Make at least 1 commit that contains your progress in completing
 `observer` pattern
-- [ ] Push your commits to online Git repository on your GitLab project
-- [ ] Fix `MiniDuckSimulator` program in `strategy` package
-- [ ] Pass all tests in `strategy` package
-- [ ] Pass all tests in `observer` package
+- [x] Push your commits to online Git repository on your GitLab project
+- [x] Fix `MiniDuckSimulator` program in `strategy` package
+- [x] Pass all tests in `strategy` package
+- [x] Pass all tests in `observer` package
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, i.e. Checkstyle did not
+- [x] Make sure there are no code style issues, i.e. Checkstyle did not
 produce any warning when you execute `check` or `checkstyleMain` Gradle
 tasks
-- [ ] Implement all required methods correctly
+- [x] Implement all required methods correctly
     - **Hint: Make sure the implementation follows the example in Head First
     Design Pattern book!**
-- [ ] Describe another example of Strategy pattern you found in the wild, e.g.
+- [x] Describe another example of Strategy pattern you found in the wild, e.g.
 Java's standard library, 3rd party framework, etc., and write it in the
 provided space in this document (i.e. [My Notes](#my-notes) section)
     - **Reminder: Do not forget to `add`, `commit`, and `push` this document
     as well if you made some changes!**
-- [ ] Describe the difference between implementing Observer pattern by creating
+- [x] Describe the difference between implementing Observer pattern by creating
 your own Subject and Observer from scratch vs. reusing Java's `java.util.Observable`
 and `java.util.Observer`
     - Write your answer in [My Notes](#my-notes) section in this document
@@ -154,3 +154,10 @@ and `java.util.Observer`
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+- Salah satu contoh dari pattern Strategy adalah moda kendaraan untuk ke bandara,
+beberapa opsi di antaranya mengendarai kendaraan pribadi, naik taksi, bus bandara, bus kota, dll. 
+
+- Perbedaan antara mengimplementasikan pattern Observer dengan membuat sendiri Subject dan
+Observer dari scratch dan menggunakan bawaan Java adalah lebih mudah dengan menggunakan bawaan Java,
+kita cukup menggunakan method-method yang sudah tersedia, jika kurang kita bisa menambahkannya sendiri. 
+    
