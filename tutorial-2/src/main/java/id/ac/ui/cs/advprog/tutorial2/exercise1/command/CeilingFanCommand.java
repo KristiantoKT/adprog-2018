@@ -13,7 +13,8 @@ public abstract class CeilingFanCommand implements Command {
 
     @Override
     public void execute() {
-        // TODO Complete me!
+        prevSpeed = ceilingFan.getSpeed();
+        operate();
     }
 
     protected abstract void operate();
@@ -21,13 +22,13 @@ public abstract class CeilingFanCommand implements Command {
     @Override
     public void undo() {
         if (prevSpeed == CeilingFan.HIGH) {
-            // TODO Complete me!
+            ceilingFan.high();
         } else if (prevSpeed == CeilingFan.MEDIUM) {
             ceilingFan.medium();
         } else if (prevSpeed == CeilingFan.LOW) {
             ceilingFan.low();
         } else if (prevSpeed == CeilingFan.OFF) {
-            // TODO Complete me!
+            ceilingFan.off();
         }
     }
 }

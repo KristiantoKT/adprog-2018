@@ -7,10 +7,10 @@ public class SimpleRemoteControl {
     private Command slot;
 
     public void setCommand(Command command) {
-        // TODO Complete me!
+        slot = command;
     }
 
     public void buttonWasPressed() {
-        // TODO Complete me!
+        slot.execute();
     }
 }
