@@ -212,3 +212,7 @@ modified to use Stream API
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+Perbedaan antara template `CeilingFanCommand` yang ada di Head First Design Patterns dengan
+yang ada pada `tutorial-2` adalah pada `tutorial-2`, command `operate()` dideklarasikan secara abstrak, 
+dan diimplementasikan pada masing-masing `CeilingFanXCommand`  
