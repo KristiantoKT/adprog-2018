@@ -28,3 +28,12 @@ test:t2:
     - /.*tutorial[_-].*2$/
   except:
     - branches@csui-advprog-2018/lab
+
+# Tutorial 2 CI jobs
+test:t3:
+  stage: test
+  script: gradle :tutorial-3:check
+  only:
+    - /.*tutorial[_-].*3$/
+  except:
+    - branches@csui-advprog-2018/lab

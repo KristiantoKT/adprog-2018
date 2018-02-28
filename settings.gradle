@@ -1,3 +1,4 @@
 rootProject.name = 'advprog-lab'
 include 'tutorial-1'
 include 'tutorial-2'
+include 'tutorial-3'
