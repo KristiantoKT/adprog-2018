@@ -3,7 +3,12 @@ package id.ac.ui.cs.advprog.tutorial3.composite;
 import static org.junit.Assert.assertEquals;
 
 import id.ac.ui.cs.advprog.tutorial3.composite.higherups.Ceo;
+import id.ac.ui.cs.advprog.tutorial3.composite.higherups.Cto;
 import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.BackendProgrammer;
+import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.FrontendProgrammer;
+import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.NetworkExpert;
+import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.SecurityExpert;
+import id.ac.ui.cs.advprog.tutorial3.composite.techexpert.UiUxDesigner;
 
 import java.util.List;
 import org.junit.Before;
@@ -51,8 +56,7 @@ public class CompanyTest {
         company.addEmployee(brook);
 
         //NEED TO UPDATE IF YOU WANT TO WORK ADDITIONAL PROBLEM SET
-        //TODO Implement
-        chopper = new SecurityExpert("Chopper", 10000.00);
+        chopper = new SecurityExpert("Chopper", 70000.00);
         company.addEmployee(chopper);
     }
 
@@ -72,10 +76,7 @@ public class CompanyTest {
     @Test
     public void salaryTotalTest() {
         List<Employees> allEmployees = company.getAllEmployees();
-
-        //NEED TO UPDATE IF YOU WANT TO WORK ADDITIONAL PROBLEM SET
-        //TODO Implement
-        assertEquals(1580000.00, company.getNetSalaries(), 0.0001);
+        assertEquals(1640000.00, company.getNetSalaries(), 0.0001);
     }
 
 }

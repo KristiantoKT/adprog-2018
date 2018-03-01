@@ -1,13 +1,13 @@
-package id.ac.ui.cs.advprog.tutorial3.composite.higherups;
+package id.ac.ui.cs.advprog.tutorial3.composite.techexpert;
 
 import id.ac.ui.cs.advprog.tutorial3.composite.Employees;
 
-public class Ceo extends Employees {
-    static final double MINSALARY = 200000.00;
+public class NetworkExpert extends Employees {
+    static final double MINSALARY = 50000.00;
 
-    public Ceo(String name, double salary) {
+    public NetworkExpert(String name, double salary) {
         this.name = name;
-        this.role = "CEO";
+        this.role = "Network Expert";
         if (salary < MINSALARY) {
             throw new IllegalArgumentException();
         } else {
