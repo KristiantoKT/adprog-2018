@@ -146,32 +146,32 @@ gradle :tutorial-3:checkstyleMain
 ## Mandatory Tasks Checklist
 
 - Decorator Pattern Checklist
-    - [ ] Make at least 1 commit that contains your progress in completing
+    - [x] Make at least 1 commit that contains your progress in completing
     Decorator pattern
-    - [ ] Push your commits to online Git repository on your GitLab project
-    - [ ] Complete the imeplementation over required Class
-    - [ ] Create a main class that demonstrate your implementation 
-    - [ ] Pass all test in `bread` and `filling` package
+    - [x] Push your commits to online Git repository on your GitLab project
+    - [x] Complete the imeplementation over required Class
+    - [x] Create a main class that demonstrate your implementation 
+    - [x] Pass all test in `bread` and `filling` package
 - Composite Pattern Checklist
-    - [ ] Make at least 1 commit that contains your progress in completing
+    - [x] Make at least 1 commit that contains your progress in completing
     Composite Method pattern
-    - [ ] Push your commits to online Git repository on your GitLab project
-    - [ ] Complete the implementation over required classes
-    - [ ] Create a main class that demonstrate your implementation
-    - [ ] Pass all test in `higherups` and `techexpert` package
+    - [x] Push your commits to online Git repository on your GitLab project
+    - [x] Complete the implementation over required classes
+    - [x] Create a main class that demonstrate your implementation
+    - [x] Pass all test in `higherups` and `techexpert` package
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, i.e. Checkstyle did not
+- [x] Make sure there are no code style issues, i.e. Checkstyle did not
 produce any warning when you execute `check` or `checkstyleMain` Gradle
 tasks
 - Decorator Pattern Checklist
-    - [ ] Pass all tests in `MultipleFillingTest` Class
-    - [ ] Explain why decorator pattern is helpful in this particular problem set?
+    - [x] Pass all tests in `MultipleFillingTest` Class
+    - [x] Explain why decorator pattern is helpful in this particular problem set?
         - Write your answer in [My Notes](#my-notes) section in this document
 - Composite Pattern Checklist
-    - [ ] Pass all tests in `AdditionalCompanyTest` Class
-    - [ ] If you look carefully, both decorator and composite pattern have a same
+    - [x] Pass all tests in `AdditionalCompanyTest` Class
+    - [x] If you look carefully, both decorator and composite pattern have a same
     particular topic (creating an object that comes from two or more supporting object).
     Explain what is the difference between composite and decorator purpose.
         - Write your answer in [My Notes](#my-notes) section in this document
@@ -182,3 +182,12 @@ tasks
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+Decorator pattern is helpful because it provides a flexible alternative 
+to subclassing for extending functionality.
+
+The difference between composite and decorator is:
+    - Composite gives an unified interface to a leaf and composite.
+    - Decorator gives additional feature to leaf, while giving unified interface.
+
+
