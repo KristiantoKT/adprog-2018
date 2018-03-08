@@ -161,3 +161,18 @@ a Singleton object and describe the pros/cons of both approaches
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+- Lazy-instantiation
+
+Pro(s) | Con(s)
+------ | ------
+Thread safety is guaranteed | Slow performance because of locking overhead
+Client application can pass parameters | Unnecessary synchronization that is not required once the instance variable is initialized
+
+
+- Eager-instantiation
+
+Pro(s) | Con(s)
+------ | ------
+Thread safety without synchronization | Early creation of resource that might not be used in the application
+Easy to implement | The client application can't pass any argument, so it can't be reused
