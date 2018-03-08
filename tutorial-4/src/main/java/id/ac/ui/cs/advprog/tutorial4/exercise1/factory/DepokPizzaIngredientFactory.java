@@ -29,7 +29,7 @@ public class DepokPizzaIngredientFactory implements PizzaIngredientFactory {
     }
 
     public Veggies[] createVeggies() {
-        Veggies[] veggies = {new RedPepper(), new Pineapple(), new Spinach(), new BlackOlives()};
+        Veggies[] veggies = {new BlackOlives(), new Pineapple(), new RedPepper(), new Spinach()};
         return veggies;
     }
 
