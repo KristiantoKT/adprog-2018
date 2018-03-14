@@ -65,3 +65,9 @@ project(':tutorial-4') {
         testCompile group: 'junit', name: 'junit', version: junit4_version
     }
 }
+
+project(':tutorial-5') {
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: junit4_version
+    }
+}
