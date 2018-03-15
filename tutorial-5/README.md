@@ -159,23 +159,23 @@ gradle :tutorial-5:checkstyleMain
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make at least 1 commit that contains your progress in completing
+- [x] Make at least 1 commit that contains your progress in completing
 the tutorial
-- [ ] Push your commits to online Git repository on your GitLab project
-- [ ] Implement the Requested Feature of Creating a `CV Page` as requested
-- [ ] Create several JUnit 4-based unit test classes (and the test cases,
+- [x] Push your commits to online Git repository on your GitLab project
+- [x] Implement the Requested Feature of Creating a `CV Page` as requested
+- [x] Create several JUnit 4-based unit test classes (and the test cases,
       obviously)
-- [ ] Pass all the created test
+- [x] Pass all the created test
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, i.e. Checkstyle did not
+- [x] Make sure there are no code style issues, i.e. Checkstyle did not
 produce any warning when you execute `check` or `checkstyleMain` Gradle
 tasks
-- [ ] Make sure that you have 100% Code Coverage
-- [ ] Unit Tests that are created must have a good quality (Min 1 Positive and Negative
+- [x] Make sure that you have 100% Code Coverage
+- [x] Unit Tests that are created must have a good quality (Min 1 Positive and Negative
 Test Case per Function that you wanna test)
-- [ ] Explain in several paragraphs Why Spring Boot can be used as an example 
+- [x] Explain in several paragraphs Why Spring Boot can be used as an example 
 for Model-View-Controller Pattern
     - Explain what is Model-View-Controller Pattern in 1 sentence
     - Where is Model, View, and Controller in Spring Boot Framework
@@ -196,3 +196,10 @@ Database [Here](https://github.com/spring-guides/gs-accessing-data-mysql)
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+MVC Pattern stands for Model-View-Controller Pattern, and 
+this pattern is used to separate application's concerns.
+
+Model of Sprint Boot Framework is located on every class that represent the object, like `Person` class. 
+View of Spring Boot Framework is located on every HTML file. 
+Controller of Spring Boot Framework is located on every class that handle the object, like `PersonController` class
