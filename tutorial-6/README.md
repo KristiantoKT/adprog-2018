@@ -160,3 +160,16 @@ following questions:
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+- Benefits of refactoring:
+    - Improves the design of software
+    - Makes software easier to understand
+    - Helps to find bugs
+    - Helps to prgram faster
+- Bad qualities in the code if we did not refactor the code are called "code smells", such as: duplicate code,
+long method, large class, switch statements, and many more.
+- By extracting the calculations I can create the htmlStatement method and reuse all of the
+  calculation code that was in the original statement method. I didn't copy and paste, so if the
+  calculation rules change I have only one place in the code to go to. 
+  Some code is copied from the ASCII version, mainly due to setting up the loop. Further
+  refactoring could clean that up. Extracting methods for header, footer, and detail line are one
+  route I could take. (taken from Refactoring - Improving the Design of Existing by M.Fowler et al)
