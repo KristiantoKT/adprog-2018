@@ -40,34 +40,43 @@ subprojects {
     }
 
     dependencies {
-        testCompile group: 'org.mockito', name: 'mockito-core', version: mockito_version
-        testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junit5_jupiter_version
-        testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junit5_jupiter_version
-        testRuntime group: 'org.junit.platform', name: 'junit-platform-launcher', version: junit5_platform_version
-        testRuntime group: 'org.junit.vintage', name: 'junit-vintage-engine', version: junit5_vintage_version
+        testImplementation group: 'org.mockito', name: 'mockito-core', version: mockito_version
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junit5_jupiter_version
+        testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junit5_jupiter_version
+        testRuntimeOnly group: 'org.junit.platform', name: 'junit-platform-launcher', version: junit5_platform_version
+        testRuntimeOnly group: 'org.junit.vintage', name: 'junit-vintage-engine', version: junit5_vintage_version
     }
+
+    // Add Eclipse Gradle plugin
+    apply plugin: 'eclipse'
 }
 
 project(':tutorial-1') {
     dependencies {
-        testCompile group: 'junit', name: 'junit', version: junit4_version
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
     }
 }
 
 project(':tutorial-3') {
     dependencies {
-        testCompile group: 'junit', name: 'junit', version: junit4_version
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
     }
 }
 
 project(':tutorial-4') {
     dependencies {
-        testCompile group: 'junit', name: 'junit', version: junit4_version
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
     }
 }
 
 project(':tutorial-5') {
     dependencies {
-        testCompile group: 'junit', name: 'junit', version: junit4_version
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
+    }
+}
+
+project(':tutorial-6') {
+    dependencies {
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
     }
 }
