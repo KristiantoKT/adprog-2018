@@ -129,22 +129,22 @@ gradle :tutorial-6:checkstyleTest
 
 ## Mandatory Tasks Checklist
 
-- [ ] Refactor `statement()` method in `Customer` class
-- [ ] Make at least 3 commits that contains your progress in refactoring
+- [x] Refactor `statement()` method in `Customer` class
+- [x] Make at least 3 commits that contains your progress in refactoring
 `statement()` method in `Customer` class
-- [ ] Refactor test classes
-- [ ] Make at least 1 commit that contains your progress in refactoring
+- [x] Refactor test classes
+- [x] Make at least 1 commit that contains your progress in refactoring
 test classes
-- [ ] Ensure the tests still pass after each refactoring
-- [ ] Push your commits to online Git repository on your GitLab project
+- [x] Ensure the tests still pass after each refactoring
+- [x] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [x] Make sure there are no code style issues, both in production code and
 test code
-- [ ] Implement `htmlStatement()` method in `Customer` class
-- [ ] Create tests for testing `htmlStatement()` method using JUnit 4
-- [ ] Ensure 100% code coverage
+- [x] Implement `htmlStatement()` method in `Customer` class
+- [x] Create tests for testing `htmlStatement()` method using JUnit 4
+- [x] Ensure 100% code coverage
 - [ ] Reflect on the refactoring activities that you have done and answer the
 following questions:
     - What are the benefits of refactoring based on your observation?
