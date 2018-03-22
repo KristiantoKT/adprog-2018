@@ -12,6 +12,8 @@
       <module name="tutorial-4_test" target="1.8" />
       <module name="tutorial-5_main" target="1.8" />
       <module name="tutorial-5_test" target="1.8" />
+      <module name="tutorial-6_main" target="1.8" />
+      <module name="tutorial-6_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
