@@ -30,7 +30,7 @@ class Customer {
             Rental each = iterator.next();
 
             // Add frequent renter points
-            frequentRenterPoints++;
+            frequentRenterPoints += each.getFrequentRenterPoints();
 
             // Add bonus for a two day new release rental
             if ((each.getMovie().getPriceCode() == Movie.NEW_RELEASE) &&
