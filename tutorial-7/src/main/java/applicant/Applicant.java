@@ -49,17 +49,20 @@ public class Applicant {
 
         //printEvaluation(evaluate(applicant,
         //                new CreditEvaluator(new EmploymentEvaluator(new QualifiedEvaluator()))));
-        printEvaluation(evaluate(applicant, qualifiedEvaluator.and(employmentEvaluator).and(creditEvaluator)));
+        printEvaluation(evaluate(applicant,
+                qualifiedEvaluator.and(employmentEvaluator).and(creditEvaluator)));
 
         //        printEvaluation(evaluate(applicant,
         //                new CriminalRecordsEvaluator(
         //                        new EmploymentEvaluator(new QualifiedEvaluator()))));
-        printEvaluation(evaluate(applicant, qualifiedEvaluator.and(employmentEvaluator).and(crimeCheck)));
+        printEvaluation(evaluate(applicant,
+                qualifiedEvaluator.and(employmentEvaluator).and(crimeCheck)));
 
         //        printEvaluation(evaluate(applicant,
         //                new CriminalRecordsEvaluator(
         //                        new CreditEvaluator(
         //                                new EmploymentEvaluator(new QualifiedEvaluator())))));
-        printEvaluation(evaluate(applicant, qualifiedEvaluator.and(employmentEvaluator).and(creditEvaluator).and(crimeCheck)));
+        printEvaluation(evaluate(applicant,
+                qualifiedEvaluator.and(employmentEvaluator).and(creditEvaluator).and(crimeCheck)));
     }
 }
