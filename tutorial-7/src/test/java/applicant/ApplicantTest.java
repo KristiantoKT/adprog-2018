@@ -1,10 +1,10 @@
 package applicant;
 
-import org.junit.Ignore;
+import org.junit.Test;
 
-@Ignore
 public class ApplicantTest {
-    // TODO Implement me!
-    // Increase code coverage in Applicant class
-    // by creating unit test(s)!
+    @Test
+    public void checkMainFunction() {
+        Applicant.main(new String[]{});
+    }
 }

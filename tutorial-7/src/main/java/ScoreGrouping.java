@@ -11,7 +11,7 @@ public class ScoreGrouping {
 
     public static Map<Integer, List<String>> groupByScores(
             Map<String, Integer> scores) {
-                return scores.keySet().stream().collect(groupingBy(scores::get));
+        return scores.keySet().stream().collect(groupingBy(scores::get));
     }
 
     public static void main(String[] args) {

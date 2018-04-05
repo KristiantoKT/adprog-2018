@@ -1,11 +1,9 @@
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class PrimeCheckerTest {
@@ -20,5 +18,10 @@ public class PrimeCheckerTest {
     @Test
     public void testIsPrimeFalseGivenNonPrimeNumbers() {
         NON_PRIME_NUMBERS.forEach(number -> assertFalse(PrimeChecker.isPrime(number)));
+    }
+
+    @Test
+    public void checkMainFunction() {
+        PrimeChecker.main(new String[]{});
     }
 }

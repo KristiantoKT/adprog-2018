@@ -1,13 +1,11 @@
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Ignore
 public class ScoreGroupingTest {
     Map<String, Integer> scores = new HashMap<>();
 
@@ -24,6 +22,11 @@ public class ScoreGroupingTest {
     @Test
     public void testForScoreGroupingTrue(){
         String expectedOutput = "{11=[Charlie, Foxtrot], 12=[Alice], 15=[Emi, Bob, Delta]}";
-        assertEquals(expectedOutput, ScoreGrouping.groupByScores(scores));
+        assertEquals(expectedOutput, ScoreGrouping.groupByScores(scores).toString());
+    }
+
+    @Test
+    public void checkMainFunction() {
+        ScoreGrouping.main(new String[]{});
     }
 }
