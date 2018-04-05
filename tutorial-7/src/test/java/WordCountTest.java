@@ -1,5 +1,4 @@
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
 
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -9,7 +8,6 @@ import java.util.List;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class WordCountTest {
@@ -24,26 +22,22 @@ public class WordCountTest {
         Files.write(testFixtureFile, LINES, Charset.defaultCharset());
     }
 
-    @Ignore
+    @Test
     public void testExistingWordsShouldCountedCorrectly() throws Exception {
         assertEquals(2, WordCount.countLines("lorem", testFixtureFile));
     }
 
-    @Ignore
+    @Test
     public void testExistingSubstringShouldCountedCorrectly() throws Exception {
-        fail("TODO Implement me!");
-        // Given a substring that occurred 3 times (i.e. 'lor') in test fixture
-        // When countLines is invoked
-        // It should return 3
+        assertEquals(3, WordCount.countLines("lor", testFixtureFile));
     }
 
-    @Ignore
+    @Test
     public void testNonExistingWordsShouldCountedCorrectly() throws Exception {
-        fail("TODO Implement me!");
-        // Given a word that is not present in test fixture
-        // When countLines is invoked
-        // It should return 0
+        assertEquals(0, WordCount.countLines("haha", testFixtureFile));
     }
+
+    @Test
 
     @After
     public void tearDown() throws Exception {

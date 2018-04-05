@@ -1,3 +1,5 @@
+import static java.util.stream.Collectors.groupingBy;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,6 +29,7 @@ public class ScoreGrouping {
         }
 
         return byScores;
+        //return scores.keySet().stream().collect(groupingBy(scores::get));
     }
 
     public static void main(String[] args) {
