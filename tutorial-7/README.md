@@ -139,26 +139,26 @@ gradle :tutorial-7:jacocoTestReport
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make sure that you have at least 1 commit for each exercises that contain
+- [x] Make sure that you have at least 1 commit for each exercises that contain
 changes to the code after refactoring
-- [ ] Complete 1st exercise
-- [ ] Complete 2nd exercise
-- [ ] Complete 3rd exercise
-- [ ] Complete 4th exercise
-- [ ] Ensure the tests still pass after each refactoring
-- [ ] Push your commits to online Git repository on your GitLab project
+- [x] Complete 1st exercise
+- [x] Complete 2nd exercise
+- [x] Complete 3rd exercise
+- [x] Complete 4th exercise
+- [x] Ensure the tests still pass after each refactoring
+- [x] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [x] Make sure there are no code style issues, both in production code and
 test code
-- [ ] Ensure 100% code coverage on all methods except `main` method after all
+- [x] Ensure 100% code coverage on all methods except `main` method after all
 code has been refactored
-- [ ] Compare the number of LOC before and after refactoring and provide
+- [x] Compare the number of LOC before and after refactoring and provide
 a short analysis on the result
     - Write your analysis report in [My Notes](#my-notes) section in this
     document
-- [ ] Write a paragraph that describe your experience in refactoring codebase
+- [x] Write a paragraph that describe your experience in refactoring codebase
 into functional style
     - You are allowed to write more than the required paragraph
     - Write your answer in [My Notes](#my-notes) section in this document
@@ -168,3 +168,13 @@ into functional style
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+The number of LOC before and after refactoring is significantly reduced. We do 
+not need to write how do we reach the goals, but instead we just declare what
+we want. Functional style provides one-liner code, so it's easier and more
+efficient to code.
+
+Because of first attempt using this style, firstly it's a little bit harder. 
+I think that I must remember all of the syntax. Besides, it's more efficient 
+to implement because I only tell the computer what I want by using some Java's
+library.  
