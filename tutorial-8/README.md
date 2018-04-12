@@ -146,18 +146,18 @@ gradle :tutorial-8:jacocoTestReport
 
 ## Mandatory Tasks Checklist
 
-- [ ] Make sure that you have at least 1 commit for each exercises that contain
+- [x] Make sure that you have at least 1 commit for each exercises that contain
 changes to the code after refactoring
 - [ ] Explain in your `My Notes` Section in this README, why at the first template code,
 the initial Tally Counter cannot have the exact number of ordered ticket (Relate it to
 the declaration of `c++` and `c--`)
-- [ ] Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using 
+- [x] Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using 
 `AtomicInteger` and explain why it can be the solution of this particular concurrency 
 problem
-- [ ] Implement the new `TallyCounter` version (e.g. `SynchronizedTallyCounter`) using Java
+- [x] Implement the new `TallyCounter` version (e.g. `SynchronizedTallyCounter`) using Java
 `Synchronized` and explain why it can be the solution of this particular concurrency 
 problem
-- [ ] Push your commits to online Git repository on your GitLab project
+- [x] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 

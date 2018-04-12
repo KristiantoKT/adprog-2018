@@ -3,7 +3,7 @@ package tallycounter;
 
 public class Main {
     public static void main(String[] args) {
-        TallyCounter counter = new TallyCounter();
+        AtomicTallyCounter counter = new AtomicTallyCounter();
 
         /* Increase this variable value to make the thread process
         slower, so you can see the log in console more clearly */

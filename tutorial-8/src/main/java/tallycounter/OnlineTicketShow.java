@@ -2,13 +2,13 @@ package tallycounter;
 
 public class OnlineTicketShow implements Runnable {
 
-    private TallyCounter tallyCounterReference;
+    private AtomicTallyCounter tallyCounterReference;
     private Thread thread;
     private int maxTicketOrdered;
     private String websiteName;
     private int buyingRateinMiliSecond;
 
-    public OnlineTicketShow(String websiteName, TallyCounter tallyCounterReference,
+    public OnlineTicketShow(String websiteName, AtomicTallyCounter tallyCounterReference,
                                  int maxTicketOrdered, int buyingRateinMiliSecond) {
         this.tallyCounterReference = tallyCounterReference;
         this.maxTicketOrdered = maxTicketOrdered;

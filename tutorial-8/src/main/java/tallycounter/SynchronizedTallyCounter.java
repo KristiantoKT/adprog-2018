@@ -1,13 +1,13 @@
 package tallycounter;
 
-public class TallyCounter {
+public class SynchronizedTallyCounter {
     private int counter = 0;
 
-    public void increment() {
+    public synchronized void increment() {
         counter++;
     }
 
-    public void decrement() {
+    public synchronized void decrement() {
         counter--;
     }
 
