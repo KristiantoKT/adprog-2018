@@ -18,8 +18,8 @@ code snippets.
 5. [Tutorial 4: Abstract Factory & Singleton](tutorial-4/README.md)
 6. [Tutorial 5: Model-View-Controller](tutorial-5/README.md)
 7. [Tutorial 6: Refactoring & Testing](tutorial-6/README.md)
-8. [Tutorial 7: TBD](#)
-9. [Tutorial 8: TBD](#)
+8. [Tutorial 7: Declarative Programming](tutorial-7/README.md)
+9. [Tutorial 8: Concurrency](tutorial-8/README.md)
 10. [Tutorial 9: TBD](#)
 11. [Tutorial 10: TBD](#)
 

@@ -88,3 +88,9 @@ project(':tutorial-7') {
         testImplementation group: 'junit', name: 'junit', version: junit4_version
     }
 }
+
+project(':tutorial-8') {
+    dependencies {
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
+    }
+}
