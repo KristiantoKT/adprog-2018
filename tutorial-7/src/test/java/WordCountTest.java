@@ -37,15 +37,15 @@ public class WordCountTest {
         assertEquals(0, WordCount.countLines("haha", testFixtureFile));
     }
 
+    @Test
+    public void checkMainFunction() {
+        WordCount.main(new String[]{});
+    }
+
     @After
     public void tearDown() throws Exception {
         Files.delete(testFixtureFile);
         System.setOut(System.out);
         System.setErr(System.err);
-    }
-
-    @Test
-    public void checkMainFunction() {
-        WordCount.main(new String[]{});
     }
 }
