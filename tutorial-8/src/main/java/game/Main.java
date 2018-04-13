@@ -11,9 +11,6 @@ import java.util.Scanner;
 public class Main {
 
     private static final int TOTAL_QUEST = 10;
-    private static final int RIGHT_BELOW_THRESHOLD_POINT = 10;
-    private static final int RIGHT_ABOVE_THRESHOLD_POINT = 5;
-    private static final int WRONG_POINT = 0;
     private static final int QUEST_TYPE_ADD = 0;
     private static final int QUEST_TYPE_SUBSTR = 1;
     private static final int QUEST_TYPE_MULTIPL = 2;
@@ -85,11 +82,7 @@ public class Main {
                 long[] totalMilis1 = new long[1];
                 quizTimer = new Thread(() -> {
                     totalMilis1[0] = System.currentTimeMillis();
-                    System.out.println("Inside inner class " + totalMilis1[0] + " miliseconds");
                 });
-
-                long totalMilis = System.currentTimeMillis();
-                System.out.println("Current time: " + totalMilis);
 
                 // Start counter
                 quizTimer.start();

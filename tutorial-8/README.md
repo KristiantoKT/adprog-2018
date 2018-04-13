@@ -148,7 +148,7 @@ gradle :tutorial-8:jacocoTestReport
 
 - [x] Make sure that you have at least 1 commit for each exercises that contain
 changes to the code after refactoring
-- [ ] Explain in your `My Notes` Section in this README, why at the first template code,
+- [x] Explain in your `My Notes` Section in this README, why at the first template code,
 the initial Tally Counter cannot have the exact number of ordered ticket (Relate it to
 the declaration of `c++` and `c--`)
 - [x] Implement the new `TallyCounter` version (e.g. `AtomicTallyCounter`) using 
@@ -161,10 +161,10 @@ problem
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [x] Make sure there are no code style issues, both in production code and
 test code
-- [ ] Implementing the feature as requested in the Description
-- [ ] Write a several sentence or paragraph about the additional task
+- [x] Implementing the feature as requested in the Description
+- [x] Write a several sentence or paragraph about the additional task
     - Can you implement the new quiz rule without any concurrency? Explain Why?
     - Can you implement the new feature with using at minimum 1 Thread? Explain Why?
 
@@ -179,3 +179,21 @@ for the template code that he created in `Fraction` and `Main` class in Package 
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+Concurrency is the ability for a program to be decomposed into parts that can run independently of each other. 
+This means that tasks can be executed out of order and the result would still be the same as if they are executed 
+in order. In the *Mandatory* task, there are more than one thread that executed simultaneously. But there is a race 
+condition, causing the final counter is not match with the expected final counter. So, we need to synchronize it to
+prevent race condition. With concurrency, we can make the program to run faster. 
+
+- Why at the first template code, the initial Tally Counter cannot have the exact number of ordered ticket (Relate it to
+  the declaration of `c++` and `c--`)?
+  Race condition happened at that time. A race condition is an undesirable situation that occurs when a device or system
+  attempts to perform two or more operations at the same time, but because of the nature of the device or system, 
+  the operations must be done in the proper sequence to be done correctly.
+  
+- Can you implement the new quiz rule without any concurrency? Explain Why?
+  Maybe yes, but with concurrency, it will be more efficient, because it separates the quiz timer and quiz problem set.
+  
+- Can you implement the new feature with using at minimum 1 Thread? Explain Why?
+  I only implement quiz timer with the thread, because I still have no idea about Thread implementation in Java.
