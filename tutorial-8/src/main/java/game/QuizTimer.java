@@ -3,7 +3,7 @@ package game;
 public class QuizTimer implements Runnable {
     private QuizScore scorer;
     private Thread thread;
-    private final int sleepTime = 1000;
+    private final int sleepTime = 1000; //equal to 1 second
 
     public QuizTimer(QuizScore scorer) {
         this.scorer = scorer;
@@ -11,7 +11,7 @@ public class QuizTimer implements Runnable {
 
     public void start() {
         if (thread == null) {
-            thread = new Thread(this, "Tally Counter Checker");
+            thread = new Thread(this, "Quiz Timer");
             thread.start();
         }
     }

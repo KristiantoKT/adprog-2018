@@ -110,7 +110,10 @@ public class Main {
                 } else {
                     totalWrong++;
                 }
-                System.out.println("Current score : " + quizScore.value());
+                System.out.println("The current score after the player answering the problem : "
+                        + quizScore.value());
+                System.out.println("Total time needed to answer the problem "
+                        + (totalMilis / 1000) + " second(s)");
             }
 
             // Print the result
