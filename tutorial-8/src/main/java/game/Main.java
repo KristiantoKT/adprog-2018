@@ -119,8 +119,10 @@ public class Main {
                     totalWrong++;
                 }
 
-                System.out.println("The current score after the player answering the problem : " + totalPoint[0]);
-                System.out.println("Total time needed to answer the problem " + (totalMilis1[0] / 1000) + " second(s)");
+                System.out.println("The current score after the player answering the problem : "
+                        + totalPoint[0]);
+                System.out.println("Total time needed to answer the problem "
+                        + (totalMilis1[0] / 1000) + " second(s)");
 
             }
 
