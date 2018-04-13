@@ -27,6 +27,9 @@ public class Main {
         int totalRightBelowThreshold;
         int totalRightAboveThreshold;
         int totalWrong;
+        int[] totalPoint = {100};
+        Thread quizTimer;
+        Thread quizProblemSet;
 
         do {
             // initialize value
@@ -79,9 +82,24 @@ public class Main {
 
                 // Asking for question
                 // And capture before and after the time in milis
+
+                long[] totalMilis1 = new long[1];
+                quizTimer = new Thread(() -> {
+                    totalMilis1[0] = System.currentTimeMillis();
+                    System.out.println("Inside inner class " + totalMilis1[0] + " miliseconds");
+                    totalPoint[0]--;
+                });
+
                 long totalMilis = System.currentTimeMillis();
+                System.out.println("Current time: " + totalMilis);
+                quizTimer.start();
                 String rawAns = scanner.nextLine();
+                totalMilis1[0] = System.currentTimeMillis() - totalMilis1[0];
                 totalMilis = System.currentTimeMillis() - totalMilis;
+
+
+
+                //String rawAns = scanner.nextLine();
 
                 // Process user answer
                 Fraction userAnswer;
@@ -94,6 +112,7 @@ public class Main {
                 }
 
                 // Check answer
+                /*
                 if (expectedAnswer.isEqual(userAnswer)) {
                     if (totalMilis / 1000 <= thresholdTime) {
                         totalRightBelowThreshold++;
@@ -103,6 +122,24 @@ public class Main {
                 } else {
                     totalWrong++;
                 }
+                */
+
+                // Check answer
+                /*
+                if (expectedAnswer.isEqual(userAnswer)) {
+                    if (totalMilis[0] / 1000 <= thresholdTime) {
+                        totalRightBelowThreshold++;
+                    } else {
+                        totalRightAboveThreshold++;
+                    }
+                } else {
+                    totalWrong++;
+                }
+                */
+                //System.out.println("You answered in " + (totalMilis[0]) + " seconds");
+                System.out.println("You answered in " + totalMilis + " miliseconds");
+                System.out.println("Thread " + totalMilis1[0] + " unknown seconds");
+                System.out.println(expectedAnswer);
             }
 
             // Print the result
@@ -113,14 +150,20 @@ public class Main {
                     + totalRightAboveThreshold);
             System.out.println("Wrong answer  =  " + totalWrong);
 
+            /*
             int totalPoint = (totalRightBelowThreshold * RIGHT_BELOW_THRESHOLD_POINT)
                     + (totalRightAboveThreshold * RIGHT_ABOVE_THRESHOLD_POINT)
                     + (totalWrong * WRONG_POINT);
+                    */
+
+            /*
             System.out.println("\nTotal point acquired : " + totalPoint
                     + "(" + (totalRightBelowThreshold * RIGHT_BELOW_THRESHOLD_POINT)
                     + "+" + (totalRightAboveThreshold * RIGHT_ABOVE_THRESHOLD_POINT)
                     + "+" + (totalWrong * WRONG_POINT) + ")");
+            */
 
+            System.out.println("\nTotal point acquired : " + totalPoint[0]);
             System.out.println("\n");
 
             // Asking if user want to start a new questions
