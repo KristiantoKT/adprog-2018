@@ -24,8 +24,9 @@ public class Main {
         int totalRightBelowThreshold;
         int totalRightAboveThreshold;
         int totalWrong;
-        double[] totalPoint = {100};
-        Thread quizTimer;
+        long totalTime;
+        QuizScore quizScore;
+        QuizTimer quizTimer;
 
         do {
             // initialize value
@@ -33,12 +34,16 @@ public class Main {
             totalRightBelowThreshold = 0;
             totalRightAboveThreshold = 0;
             totalWrong = 0;
+            totalTime = 0;
 
             // Asking for asnwering question threshold time
             System.out.print("How much time do you need "
                     + "to answer each question? (In second) ");
             String rawInput = scanner.nextLine();
             thresholdTime = rawInput.isEmpty() ? 20 : Integer.parseInt(rawInput);
+            quizScore = new QuizScore();
+            quizTimer = new QuizTimer(quizScore);
+            quizTimer.start();
 
 
             for (int questNo = 1; questNo <= TOTAL_QUEST; questNo++) {
@@ -78,23 +83,10 @@ public class Main {
 
                 // Asking for question
                 // And capture before and after the time in milis
-
-                long[] totalMilis1 = new long[1];
-                quizTimer = new Thread(() -> {
-                    totalMilis1[0] = System.currentTimeMillis();
-                });
-
-                // Start counter
-                quizTimer.start();
-
-                // Capture user's input
+                long totalMilis = System.currentTimeMillis();
                 String rawAns = scanner.nextLine();
-
-                // Capture time to answer
-                totalMilis1[0] = System.currentTimeMillis() - totalMilis1[0];
-
-                // Calculate penalty point for every seconds
-                totalPoint[0] -= (totalMilis1[0] / 1000);
+                totalMilis = System.currentTimeMillis() - totalMilis;
+                totalTime += totalMilis;
 
                 // Process user answer
                 Fraction userAnswer;
@@ -108,22 +100,17 @@ public class Main {
 
                 // Check answer
                 if (expectedAnswer.isEqual(userAnswer)) {
-                    if (totalMilis1[0] / 1000 <= thresholdTime) {
+                    if (totalMilis / 1000 <= thresholdTime) {
+                        quizScore.increase(quizScore.value() * 0.1);
                         totalRightBelowThreshold++;
-                        totalPoint[0] += (totalPoint[0] * 0.1);
                     } else {
+                        quizScore.increase(quizScore.value() * 0.05);
                         totalRightAboveThreshold++;
-                        totalPoint[0] += (totalPoint[0] * 0.05);
                     }
                 } else {
                     totalWrong++;
                 }
-
-                System.out.println("The current score after the player answering the problem : "
-                        + totalPoint[0]);
-                System.out.println("Total time needed to answer the problem "
-                        + (totalMilis1[0] / 1000) + " second(s)");
-
+                System.out.println("Current score : " + quizScore.value());
             }
 
             // Print the result
@@ -134,7 +121,9 @@ public class Main {
                     + totalRightAboveThreshold);
             System.out.println("Wrong answer  =  " + totalWrong);
 
-            System.out.println("\nTotal point acquired : " + totalPoint[0]);
+            System.out.println("Total score: " + quizScore.value());
+            System.out.println("Total time: " + (double)totalTime / 1000.0);
+
             System.out.println("\n");
 
             // Asking if user want to start a new questions
@@ -147,5 +136,6 @@ public class Main {
             System.out.println("\n\n\n\n\n\n");
         } while (startNewQuestsIpt.equalsIgnoreCase("y"));
         // while user input yes, do same step again
+
     }
 }

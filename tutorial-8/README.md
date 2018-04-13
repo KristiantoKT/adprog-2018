@@ -192,8 +192,14 @@ prevent race condition. With concurrency, we can make the program to run faster.
   attempts to perform two or more operations at the same time, but because of the nature of the device or system, 
   the operations must be done in the proper sequence to be done correctly.
   
+- Why `AtomicTallyCounter` can be the solution of this particular concurrency problem?
+  `AtomicInteger` is an a class to perform atomic operations, an operation is atomic if there is a guarantee of isolation from interrupts, signals, concurrent processes and threads. Thus atomic operations can be safely performed in parallel on multiple threads.
+
+- Why `SynchronizedTallyCounter` can be the solution of this particular concurrency problem?
+  `synchronized` allows thread-synchronization which allow only one thread at a time to access the shared variable (e.g reading the value of `c`). Thus avoiding the lost writes.
+
 - Can you implement the new quiz rule without any concurrency? Explain Why?
-  Maybe yes, but with concurrency, it will be more efficient, because it separates the quiz timer and quiz problem set.
+  Yes, because computation result is only needed when user gives any input.
   
 - Can you implement the new feature with using at minimum 1 Thread? Explain Why?
-  I only implement quiz timer with the thread, because I still have no idea about Thread implementation in Java.
+  Yes, because we can implement new quiz rule without any concurrency, so 1 thread minimum is possible.
