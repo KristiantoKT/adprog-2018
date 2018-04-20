@@ -13,7 +13,6 @@ import java.util.ArrayList;
 @RestController
 public class JavariController {
     private static ArrayList<Animal> animalArrayList = new ArrayList<>();
-    private static final String COMMA = ",";
 
     @RequestMapping(value = "/animal", method = RequestMethod.GET)
     public ArrayList<Animal> animals(){
