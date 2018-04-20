@@ -47,8 +47,9 @@ subprojects {
         testRuntimeOnly group: 'org.junit.vintage', name: 'junit-vintage-engine', version: junit5_vintage_version
     }
 
-    // Add Eclipse Gradle plugin
+    // Add IDE-specific plugins
     apply plugin: 'eclipse'
+    apply plugin: 'idea'
 }
 
 project(':tutorial-1') {
@@ -90,6 +91,12 @@ project(':tutorial-7') {
 }
 
 project(':tutorial-8') {
+    dependencies {
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
+    }
+}
+
+project(':tutorial-9') {
     dependencies {
         testImplementation group: 'junit', name: 'junit', version: junit4_version
     }
