@@ -1,17 +1,17 @@
-1,Hamster,hamtaro,male,5,0.25,healthy
-2,Lion,nala,female,150,130,healthy
-3,Cat,tom,male,46,4.5,healthy
-4,Eagle,igel,male,100,9,healthy
-5,Parrot,woody,male,45,1,healthy
-6,Snake,lala,female,500,10,healthy
-7,Whale,lulu,female,230,120,healthy
-8,Whale,baba,male,260,100,healthy
-9,Whale,mumu,male,250,90,healthy
-10,Snake,uul,male,570,12,healthy
-11,Eagle,el,male,98,7,not healthy
-12,Cat,meong,male,50,4,healthy
-13,Cat,mew,female,40,3.6,not healthy
-14,Hamster,ribbon,female,13,0.45,healthy
-15,Hamster,panda,male,3,0.2,healthy
-16,Lion,simba,male,250,190,healthy
-17,Tiger,harimau,male,250,200,healthy
+id,type,name,gender,length,weight,condition
+1,Hamster,hamtaro,MALE,5,0.25,HEALTHY
+2,Lion,nala,FEMALE,150,130,HEALTHY
+3,Cat,tom,MALE,46,4.5,HEALTHY
+4,Eagle,igel,MALE,100,9,HEALTHY
+5,Parrot,woody,MALE,45,1,HEALTHY
+6,Snake,lala,FEMALE,500,10,HEALTHY
+7,Whale,lulu,FEMALE,230,120,HEALTHY
+8,Whale,baba,MALE,260,100,HEALTHY
+9,Whale,mumu,MALE,250,90,HEALTHY
+10,Snake,uul,MALE,570,12,HEALTHY
+11,Eagle,el,MALE,98,7,SICK
+12,Cat,meong,MALE,50,4,HEALTHY
+13,Cat,mew,FEMALE,40,3.6,SICK
+14,Hamster,ribbon,FEMALE,13,0.45,HEALTHY
+15,Hamster,panda,MALE,3,0.2,HEALTHY
+16,Lion,simba,MALE,250,190,HEALTHY
