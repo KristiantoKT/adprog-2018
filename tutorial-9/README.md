@@ -136,10 +136,10 @@ gradle :tutorial-9:checkstyleTest
 
 ## Mandatory Tasks Checklist
 
-- [ ] Prepare sample CSV file containing animal records
-- [ ] Create required class(es) for managing (CRUD) animal records
-- [ ] Implement all required Web service endpoints
-- [ ] Push your commits to online Git repository on your GitLab project
+- [x] Prepare sample CSV file containing animal records
+- [x] Create required class(es) for managing (CRUD) animal records
+- [x] Implement all required Web service endpoints
+- [x] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 
