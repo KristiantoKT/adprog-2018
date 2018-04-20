@@ -19,13 +19,14 @@ public class JavariController {
     private static ArrayList<Animal> animalArrayList = new ArrayList<>();
     private File file;
 
-    public JavariController(){
+    public JavariController() throws IOException {
         file = new File("./tutorial-9/src/main/java/tutorial/javari/animal_record.csv");
+        //CsvParser.forEach(file, row -> System.out.println(Arrays.toString(row)));
+        CsvParser.mapTo(Animal.class).forEach(file, animalArrayList::add);
     }
 
-    @RequestMapping(value = "/animal", method = RequestMethod.GET)
-    public ArrayList<Animal> animals() throws IOException {
-        CsvParser.forEach(file, row -> System.out.println(Arrays.toString(row)));
+    @RequestMapping(value = "/javari", method = RequestMethod.GET)
+    public ArrayList<Animal> animals() {
         return animalArrayList;
     }
 }
