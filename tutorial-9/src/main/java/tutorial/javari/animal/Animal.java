@@ -1,5 +1,9 @@
 package tutorial.javari.animal;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 /**
  * This class represents common attributes and behaviours found in all animals
  * in Javari Park.
@@ -8,6 +12,7 @@ package tutorial.javari.animal;
  * @author TODO If you make changes in this class, please write your name here
  *     and describe the changes in the comment block
  */
+@JsonDeserialize(as = Animal.class)
 public class Animal {
 
     private final Integer id;
@@ -27,8 +32,15 @@ public class Animal {
      * @param weight    weight of animal in kilograms
      * @param condition health condition of the animal
      */
+    /*
     public Animal(Integer id, String type, String name, Gender gender, double length,
                   double weight, Condition condition) {
+                  */
+    @JsonCreator
+    public Animal(@JsonProperty("id") Integer id, @JsonProperty("type") String type,
+                  @JsonProperty("name") String name, @JsonProperty("gender") Gender gender,
+                  @JsonProperty("length") double length, @JsonProperty("weight") double weight,
+                  @JsonProperty("condition") Condition condition) {
         this.id = id;
         this.type = type;
         this.name = name;
