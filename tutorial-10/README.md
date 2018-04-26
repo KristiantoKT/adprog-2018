@@ -114,28 +114,28 @@ provided by OS (e.g. time in Unix-based OS) or by measuring it directly in code
 
 ## Mandatory Tasks Checklist
 
-- [ ] Check and Optimizing Sorting Algorithm
-    - [ ] Check whether the currently used algorithm is optimal or not.
-    - [ ] Implement a better algorithm (if you think that the currently used algorithm
+- [x] Check and Optimizing Sorting Algorithm
+    - [x] Check whether the currently used algorithm is optimal or not.
+    - [x] Implement a better algorithm (if you think that the currently used algorithm
     is not optimal)
-    - [ ] Create a test case to check whether your algorithm is successfully 
+    - [x] Create a test case to check whether your algorithm is successfully 
     sort the sequence
-- [ ] Check and Optimizing Searching Algorithm
-    - [ ] Check whether the currently used algorithm is optimal or not.
-    - [ ] Implement a better algorithm (if you think that the currently used algorithm
+- [x] Check and Optimizing Searching Algorithm
+    - [x] Check whether the currently used algorithm is optimal or not.
+    - [x] Implement a better algorithm (if you think that the currently used algorithm
     is not optimal). You may combine the process by sorting the sequence first
     before searching.
-    - [ ] Create a test case to check whether your algorithm is successfully 
+    - [x] Create a test case to check whether your algorithm is successfully 
     search a speficic value in the sequence
-- [ ] Explain in [My Notes](#my-notes) section, whether the current benchmark
+- [x] Explain in [My Notes](#my-notes) section, whether the current benchmark
 test design is already good to measure the elapsed time of algorithm and explain why!
     - Hint: Recall how processes and threads are executed (from your OS course)
     and do research about how JVM runs and compiles Java code
-- [ ] Push your commits to online Git repository on your GitLab project
+- [x] Push your commits to online Git repository on your GitLab project
 
 ## Additional Tasks Checklist
 
-- [ ] Make sure there are no code style issues, both in production code and
+- [x] Make sure there are no code style issues, both in production code and
 test code
 - [ ] Refactor `convertInputFileToMatrix` to handle non-square matrix input
 - [ ] Provide Unit Test to check whether your implementation is correct
@@ -149,3 +149,22 @@ elapsed time.
 > Feel free to use this section to write your own notes related to your attempt
 > in doing the tutorial. You can also use this section to write text for
 > answering question(s) mentioned in the task checklists.
+
+#### Processes
+A process has a self-contained execution environment. A process generally has a complete, private set of basic run-time resources; in particular, each process has its own memory space.
+
+Processes are often seen as synonymous with programs or applications. However, what the user sees as a single application may in fact be a set of cooperating processes. To facilitate communication between processes, most operating systems support Inter Process Communication (IPC) resources, such as pipes and sockets. IPC is used not just for communication between processes on the same system, but processes on different systems.
+
+
+#### Threads
+Threads are sometimes called lightweight processes. Both processes and threads provide an execution environment, but creating a new thread requires fewer resources than creating a new process.
+
+Threads exist within a process — every process has at least one. Threads share the process's resources, including memory and open files. This makes for efficient, but potentially problematic, communication.
+
+#### JVM
+In Java, programs are not compiled into executable files; they are compiled into bytecode (as discussed earlier), which the JVM (Java Virtual Machine) then executes at runtime. Java source code is compiled into bytecode when we use the javac compiler. The bytecode gets saved on the disk with the file extension .class. When the program is to be run, the bytecode is converted, using the just-in-time (JIT) compiler. The result is machine code which is then fed to the memory and is executed.
+
+Java code needs to be compiled twice in order to be executed:
+- Java programs need to be compiled to bytecode.
+- When the bytecode is run, it needs to be converted to machine code.
+
