@@ -51,7 +51,7 @@ public class MatrixOperation {
 
         double[][] newa = new double[newLengtha][newLengtha];
         double[][] newb = new double[newLengthb][newLengthb];
-        double[][] cret = new double[a.length][a.length];
+        double[][] cret = new double[a[0].length][b.length];
         for (int x = 0; x < a.length; x++) {
             for (int y = 0; y < a.length; y++) {
                 newa[x][y] = a[x][y];
@@ -59,10 +59,11 @@ public class MatrixOperation {
         }
 
         for (int x = 0; x < b.length; x++) {
-            for (int y = 0; y < b.length; y++) {
+            for (int y = 0; y < b[0].length; y++) {
                 newb[x][y] = b[x][y];
             }
         }
+
         double[][] c = StrassensAlgorithm.strassenMultiplicationAlgorithm(newa, newb);
         for (int x = 0; x < cret.length; x++) {
             for (int y = 0; y < cret.length; y++) {

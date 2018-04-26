@@ -25,19 +25,17 @@ public class Finder {
     public static int fastSearch(int[] arrOfInt, int searchedValue) {
         int first = 0;
         int last = arrOfInt.length - 1;
-        int returnValue = -1;
-        int mid = (first + last) / 2;
-        while (first <= last) {
-            if (arrOfInt[mid] < searchedValue) {
-                first = mid + 1;
-            } else if (arrOfInt[mid] == searchedValue) {
-                returnValue = arrOfInt[mid];
-                break;
-            } else {
+
+        for (int i = 0; i < arrOfInt.length; i++) {
+            int mid = (first + last) / 2;
+            if (arrOfInt[i] == searchedValue) {
+                return arrOfInt[i];
+            } else if (arrOfInt[mid] > searchedValue) {
                 last = mid - 1;
+            } else {
+                first = mid + 1;
             }
-            mid = (first + last) / 2;
         }
-        return returnValue;
+        return -1;
     }
 }

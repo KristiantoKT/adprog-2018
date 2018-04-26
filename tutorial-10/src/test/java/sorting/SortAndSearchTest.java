@@ -2,10 +2,8 @@ package sorting;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
-
 import java.util.Arrays;
-
+import org.junit.Test;
 
 public class SortAndSearchTest {
     int[] arr = {2,3,1,4,5,9,10,7,8,6};
@@ -19,8 +17,8 @@ public class SortAndSearchTest {
 
     @Test
     public void testFinder() {
-        int slowFinder = Finder.slowSearch(arr, 10);
-        int fastFinder = Finder.fastSearch(arr, 10);
+        int slowFinder = Finder.slowSearch(arr, 6);
+        int fastFinder = Finder.fastSearch(arr, 6);
         assertTrue(slowFinder == fastFinder);
     }
 }

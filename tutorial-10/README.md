@@ -137,12 +137,12 @@ test design is already good to measure the elapsed time of algorithm and explain
 
 - [x] Make sure there are no code style issues, both in production code and
 test code
-- [ ] Refactor `convertInputFileToMatrix` to handle non-square matrix input
-- [ ] Provide Unit Test to check whether your implementation is correct
-- [ ] Define your benchmark test for basic and Strassen multiplication algorithm to measure
+- [x] Refactor `convertInputFileToMatrix` to handle non-square matrix input
+- [x] Provide Unit Test to check whether your implementation is correct
+- [x] Define your benchmark test for basic and Strassen multiplication algorithm to measure
 elapsed time.
-    - [ ] Explain why you decided to design your benchmark test as it is in My notes section.
-    - [ ] Report the result of your benchmark test in My notes section 
+    - [x] Explain why you decided to design your benchmark test as it is in My notes section.
+    - [x] Report the result of your benchmark test in My notes section 
 
 ## My Notes
 
@@ -168,3 +168,5 @@ Java code needs to be compiled twice in order to be executed:
 - Java programs need to be compiled to bytecode.
 - When the bytecode is run, it needs to be converted to machine code.
 
+#### Matrix Benchmark
+I used currentTimeMillis() benchmark option to compare both time execution. Basic multiplication algorithm is run faster than Strassens Algorithm.
