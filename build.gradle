@@ -102,3 +102,9 @@ project(':tutorial-9') {
         compile 'org.simpleflatmapper:sfm-csv:3.17.4'
     }
 }
+
+project(':tutorial-10') {
+    dependencies {
+        testImplementation group: 'junit', name: 'junit', version: junit4_version
+    }
+}

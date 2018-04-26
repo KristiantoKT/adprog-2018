@@ -21,7 +21,7 @@ code snippets.
 8. [Tutorial 7: Declarative Programming](tutorial-7/README.md)
 9. [Tutorial 8: Concurrency](tutorial-8/README.md)
 10. [Tutorial 9: RESTful Web Service](tutorial-9/README.md)
-11. [Tutorial 10: TBD](#)
+11. [Tutorial 10: Profiling](tutorial-10/README.md)
 
 ## TL;DR
 
