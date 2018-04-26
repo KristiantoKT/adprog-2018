@@ -22,15 +22,29 @@ public class Main {
 
         //Sorting Input
         long totalMilisSorting = System.currentTimeMillis();
-        int[] sortedInput = Sorter.slowSort(sequenceInput);
+        int[] sortedInput = Sorter.fastSort(sequenceInput);
         totalMilisSorting = System.currentTimeMillis() - totalMilisSorting;
-        System.out.println("Sorting Complete in " + totalMilisSorting + " milisecond");
+        System.out.println("Sorting (fast) Complete in " + totalMilisSorting + " milisecond");
+
+        //Sorting Input
+        long totalMilisSlowSorting = System.currentTimeMillis();
+        int[] sortedSlowInput = Sorter.slowSort(sequenceInput);
+        totalMilisSlowSorting = System.currentTimeMillis() - totalMilisSlowSorting;
+        System.out.println("Sorting (slow) Complete in " + totalMilisSlowSorting + " milisecond");
 
         //Searching Input After Sorting
         long totalMilisSearchAfterSort = System.currentTimeMillis();
-        int searchingResultAfterSort = Finder.slowSearch(sequenceInput, 40738);
+        int searchingResultAfterSort = Finder.fastSearch(sequenceInput, 40738);
         totalMilisSearchAfterSort = System.currentTimeMillis() - totalMilisSearchAfterSort;
-        System.out.println("Searching Complete in " + totalMilisSearchAfterSort + " milisecond");
+        System.out.println("Searching (fast) Complete in " + totalMilisSearchAfterSort
+                + " milisecond");
+
+        //Searching Input After Sorting
+        long totalMilisSearchAfterSlowSort = System.currentTimeMillis();
+        int searchingSlowResultAfterSort = Finder.slowSearch(sequenceInput, 40738);
+        totalMilisSearchAfterSlowSort = System.currentTimeMillis() - totalMilisSearchAfterSlowSort;
+        System.out.println("Searching (slow) Complete in " + totalMilisSearchAfterSlowSort
+                + " milisecond");
     }
 
     /**
