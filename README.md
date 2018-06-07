@@ -16,7 +16,7 @@ code snippets.
 3. [Tutorial 2: Command & Template Method](tutorial-2/README.md)
 4. [Tutorial 3: Decorator & Composite](tutorial-3/README.md)
 5. [Tutorial 4: Abstract Factory & Singleton](tutorial-4/README.md)
-6. [Tutorial 5: TBD](#)
+6. [Tutorial 5: Model-View-Controller](tutorial-5/README.md)
 7. [Tutorial 6: TBD](#)
 8. [Tutorial 7: TBD](#)
 9. [Tutorial 8: TBD](#)

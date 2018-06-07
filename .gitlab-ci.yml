@@ -46,3 +46,17 @@ test:t4:
     - /.*tutorial[_-].*4$/
   except:
     - branches@csui-advprog-2018/lab
+
+# Tutorial 5 CI jobs
+test:t5:
+  stage: test
+  script: gradle :tutorial-5:check
+  only:
+    - /.*tutorial[_-].*5$/
+  except:
+    - branches@csui-advprog-2018/lab
+  artifacts:
+      paths:
+      - /tutorial-5/build/*
+      expire_in: 1 week
+
