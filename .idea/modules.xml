@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2.iml" group="tutorial-2" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_main.iml" group="tutorial-2" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_test.iml" group="tutorial-2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-3/tutorial-3.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-3/tutorial-3.iml" group="tutorial-3" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-3/tutorial-3_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-3/tutorial-3_main.iml" group="tutorial-3" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-3/tutorial-3_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-3/tutorial-3_test.iml" group="tutorial-3" />
     </modules>
   </component>
 </project>
