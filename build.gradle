@@ -1,0 +1,55 @@
+description = """
+Gradle build script for Advanced Programming lab exercises.
+"""
+
+// Project-wide constants
+ext.checkstyle_version = '8.8'
+ext.java_version = '1.8'
+ext.junit4_version = '4.12'
+ext.junit5_jupiter_version = '5.1.0'
+ext.junit5_platform_version = '1.1.0'
+ext.junit5_vintage_version = '5.1.0'
+ext.mockito_version = '2.5.4'
+ext.project_group = 'id.ac.ui.cs.advprog'
+ext.project_rootdir = project.rootDir.toString()
+
+// For all projects
+allprojects {
+    // Set basic information
+    group "${project_group}"
+}
+
+// For all subprojects
+subprojects {
+    // Use Java plugin
+    apply plugin: 'java'
+    sourceCompatibility = java_version
+    targetCompatibility = java_version
+
+    // Use & configure Checkstyle plugin to check code writing style
+    // Also known as 'linter'
+    apply plugin: 'checkstyle'
+    checkstyle {
+        configFile = file(new File("${project_rootdir}/config/google_csui_checks.xml"))
+        toolVersion = checkstyle_version
+        ignoreFailures = false
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testCompile group: 'org.mockito', name: 'mockito-core', version: mockito_version
+        testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: junit5_jupiter_version
+        testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: junit5_jupiter_version
+        testRuntime group: 'org.junit.platform', name: 'junit-platform-launcher', version: junit5_platform_version
+        testRuntime group: 'org.junit.vintage', name: 'junit-vintage-engine', version: junit5_vintage_version
+    }
+}
+
+project(':tutorial-1') {
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: junit4_version
+    }
+}

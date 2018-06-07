@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1726021482/advprog-lab.iml" filepath="$PROJECT_DIR$/.idea/modules/-1726021482/advprog-lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-461600613/tutorial-1.iml" filepath="$PROJECT_DIR$/.idea/modules/-461600613/tutorial-1.iml" group="tutorial-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-461600613/tutorial-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-461600613/tutorial-1_main.iml" group="tutorial-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-461600613/tutorial-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-461600613/tutorial-1_test.iml" group="tutorial-1" />
+      <module fileurl="file://$PROJECT_DIR$/tutorial-2.iml" filepath="$PROJECT_DIR$/tutorial-2.iml" group="tutorial-2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2_main.iml" group="tutorial-2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2_test.iml" group="tutorial-2" />
+    </modules>
+  </component>
+</project>

@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lab.iml" filepath="$PROJECT_DIR$/.idea/lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/advprog-lab.iml" filepath="$PROJECT_DIR$/.idea/modules/advprog-lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-1/tutorial-1.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-1/tutorial-1.iml" group="tutorial-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-1/tutorial-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-1/tutorial-1_main.iml" group="tutorial-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-1/tutorial-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-1/tutorial-1_test.iml" group="tutorial-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2.iml" group="tutorial-2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_main.iml" group="tutorial-2" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tutorial-2/tutorial-2_test.iml" group="tutorial-2" />
     </modules>
   </component>
 </project>

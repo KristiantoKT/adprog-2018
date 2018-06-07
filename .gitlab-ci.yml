@@ -1,4 +1,4 @@
-# GitLab CI configuration for Advanced Programming programming exercises
+# GitLab CI configuration for Advanced Programming lab exercises
 # Adapted from: https://gitlab.com/gitlab-org/gitlab-ci.yml/blog/master/Gradle.gitlab-ci.yml
 image: gradle:4.5.1-jdk8-alpine
 
@@ -9,27 +9,22 @@ before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
 stages:
-  - build
   - test
 
 # Tutorial 1 CI jobs
-
-build:t1:
-  stage: build
-  script: cd tutorial-1 && gradle --build-cache assemble
-  cache:
-    key: "$CI_COMMIT_REF_NAME"
-    policy: push
-    paths:
-      - tutorial-1/build
-      - tutorial-1/.gradle
-
 test:t1:
   stage: test
-  script: cd tutorial-1 && gradle check
-  cache:
-    key: "$CI_COMMIT_REF_NAME"
-    policy: pull
-    paths:
-      - tutorial-1/build
-      - tutorial-1/.gradle
+  script: gradle :tutorial-1:check
+  only:
+    - /.*tutorial[_-].*1$/
+  except:
+    - branches@csui-advprog-2018/lab
+
+# Tutorial 2 CI jobs
+test:t2:
+  stage: test
+  script: gradle :tutorial-2:check
+  only:
+    - /.*tutorial[_-].*2$/
+  except:
+    - branches@csui-advprog-2018/lab
